@@ -2,65 +2,105 @@ body {
 	max-width: 100%;
     overflow-x: hidden;
 	margin: 0px;
-	/*background-color: #2F4F4F;*/
-	/*color: white;*/
+	/*background-color: #6F7B93;*/
+	color: black;
 }
 
-nav {
-	position: fixed;
-	width: 100%;
-	top: 15px;
-	background-color: #2F4F4F;
+
+/* HEADER */
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-ul {
-	float: right;
-	margin-right: 20px;
-	padding-top: 5px;
+header nav {
+	flex: 2;
 }
 
-li {
+header li {
 	display: inline;
-	margin-right: 10px;
+	margin: 15px;
 }
 
-li > a {
-	color: white;
+header a {
 	text-decoration: none;
 }
 
-img {
-	height: 60px;
-	width: 60px;
-	float: left;
-	margin-left: 20px;
+header a.active {
+	color: #5EA94F; 
+}
+
+#logo {
+	flex: 1;
+	text-align: right;
+	font-size: 35px;
 }
 
 #main-content {
-	position: relative;
-	/*text-align: center;*/
-	top: 80px;
+	/*padding: 50px;*/
+	/*color: white;*/
 }
+
+/*IDENTIFICATION SECTION*/
 
 #identification {
-/*	background-image: url("images/human_body.jpg");
+	background-image: url("../images/laptop.jpg");
 	background-repeat: no-repeat;
-	background-size: 600px 400px;
-	background-position: 50% 0%;*/
-	height: 400px;
-	padding-top: 60px;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 150px 0px;
 }
 
-/*#vertical_line {
-	position: relative;
-	float: left;
-	left: 50%;
-	height: 400px;
-	border-left: 6px solid green;
-}*/
+#identification_info {
+	text-align: justify;
+	margin-right: 100px;
+	font-size: 30px;
+}
+
+#identification img {
+	margin-left: 50px;
+}
+
+#identification img {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	display: inline;
+}
+
+
+/*PORTFOLIO SECTION*/
+
+#portfolio {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.portfolio_images_div {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.portfolio_images_div img {
+	height: 200px;
+	width: 200px;
+}
+
+/*EXPERIENCE SECTION*/
+
+#experience_title {
+	text-align: center;
+}
 
 .exp_div {
-	text-align: justify;
+/*	text-align: justify;*/
 	width: 50%;
 }
 
@@ -81,8 +121,10 @@ img {
 }
 
 .exp_left_side_content {
-	left: 50%;
+	left: 60%;
 }
+
+/*CONTACT DIVISION*/
 
 #contact {
 	margin: auto;
@@ -112,7 +154,7 @@ form input {
 
 #phone_input{
 	position: relative;
-	left: 5px;
+	left: 10px;
 }
 
 #email_input, #message_input, #submit_btn {
