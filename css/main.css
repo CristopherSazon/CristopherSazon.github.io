@@ -39,25 +39,57 @@ header a.active {
 	font-size: 35px;
 }
 
-#main-content {
-	/*padding: 50px;*/
-	/*color: white;*/
+.section-titles {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0px;
 }
 
 /*IDENTIFICATION SECTION*/
 
 #identification {
-	background-image: url("../images/laptop.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	/*background-image: url("../images/laptop.jpg");*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 150px 0px;
+	height: 900px;
+	/*height: 100%;*/
+}
+
+#identification::before {
+	background-image: url("../images/laptop.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	/*opacity: 0.7;*/
+}
+
+#identification::after {
+	background-color: #696969;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.4;
 }
 
 #identification_info {
+	position: relative;
+	top: -20px;
 	text-align: justify;
 	margin-right: 100px;
 	font-size: 30px;
@@ -74,62 +106,75 @@ header a.active {
 	display: inline;
 }
 
+/*PROFESSIONAL SECTION*/
+#professional img {
+	height: 100px;
+	width: 100px;
+}
 
 /*PORTFOLIO SECTION*/
 
+#portfolio_experience {
+	background-image: url("../images/mountain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
 #portfolio {
 	text-align: center;
-	margin-top: 100px;
+	padding: 100px 0;
 }
 
 .portfolio_images_div {
 	display: flex;
 	justify-content: center;
-	margin-top: 40px;
+	margin-top: 100px;
 }
 
 .portfolio_images_div img {
-	height: 200px;
-	width: 200px;
+	height: 300px;
+	width: 300px;
 }
 
 /*EXPERIENCE SECTION*/
 
-#experience_title {
-	text-align: center;
+#experience{
+	padding-top: 100px;
+	padding-bottom: 450px;
 }
 
 .exp_div {
-/*	text-align: justify;*/
 	width: 50%;
-}
-
-.exp_left_side_content, .exp_div {
 	display: inline-block;
 	position: relative;
 }
 
-
 .exp_right_side {
 	left: 50%;
-	padding-left: 20px;
+	padding-left: 30px;
 	border-left: 3px solid green;
 }
 
 .exp_left_side {
 	border-right: 3px solid green;
+	text-align: right;
 }
 
-.exp_left_side_content {
-	left: 60%;
+.exp_left_side * {
+	padding-right: 30px;
 }
 
 /*CONTACT DIVISION*/
 
 #contact {
+	background-color: #001f3f;
 	margin: auto;
-	width: 80%;
-	padding: 20px;
+	width: 40%;
+	padding: 100px;
+	color: #fff;
+	position: relative;
+	bottom: 200px;
 }
 
 .contact_content, .message_form {
@@ -159,4 +204,31 @@ form input {
 
 #email_input, #message_input, #submit_btn {
 	width: 100%;
+}
+
+#submit_btn {
+	background-color: #2ECC40;
+}
+
+.social-media-icons {
+	position: relative;
+	top: 50px;
+	text-align: center;
+}
+
+.social-media-icons a {
+	margin-right: 10px;
+	font-size: 20px;
+	color: #fff;
+}
+
+/*FOOTER*/
+footer {
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #001f3f;
+	padding: 30px 0;
+	color: #fff;
 }
