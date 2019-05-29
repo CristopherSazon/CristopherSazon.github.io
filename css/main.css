@@ -177,7 +177,7 @@ header a.active {
 	bottom: 200px;
 }
 
-.contact_content, .message_form {
+.contact_content, .contactDiv {
 	width: 50%;
 	float: left;
 }
@@ -197,20 +197,21 @@ form input {
 	width: 48%;
 }
 
-#phone_input{
+#phoneInput{
 	position: relative;
 	left: 10px;
 }
 
-#email_input, #message_input, #submit_btn {
+#emailInput, #messageInput, #submitBtn {
 	width: 100%;
 }
 
-#submit_btn {
+#submitBtn {
 	background-color: #2ECC40;
 }
 
 .social-media-icons {
+	clear: both;
 	position: relative;
 	top: 50px;
 	text-align: center;
