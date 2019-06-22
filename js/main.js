@@ -34,3 +34,23 @@ function fieldOnFocus() {
 }
 
 
+
+
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+function myFunction() {
+	if (window.pageYOffset > sticky) {
+		header.classList.add("sticky-header");
+	} else {
+		header.classList.remove("sticky-header");
+	}
+
+	if (window.pageYOffset < 1590) {
+		header.style.backgroundColor = '#984B43';
+	} else {
+		header.style.backgroundColor = '#233237';
+	}
+}
+
+window.onscroll = function() {myFunction()};

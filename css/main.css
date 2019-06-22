@@ -13,11 +13,14 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+	padding: 15px 0;
+	background-color: #984B43;  /*#233237  #EAC67A*/
 }
 
-header nav {
-	flex: 2;
+.sticky-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 header li {
@@ -31,38 +34,25 @@ header a {
 }
 
 header a.active {
-	color: black;
+	font-weight: bold;
+	color: #fff;
 }
 
-#logo {
-	flex: 1;
-	text-align: right;
-	font-size: 35px;
-}
-
-.section-titles {
-	text-align: center;
-	font-size: 40px;
-	margin-top: 0px;
-}
 
 /*IDENTIFICATION SECTION*/
 
 #identification {
-	/*background-image: url("../images/laptop.jpg");*/
-	/*background-repeat: no-repeat;*/
-	/*background-size: cover;*/
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 900px;
+	height: 950px;
 	color: black;
-	/*height: 100%;*/
+	font-family: 'Oxygen Mono';
 }
 
-/*#identification::before {
-	background-image: url("../images/laptop.jpeg");
+#identification::before {
+	background-image: url("../images/laptop2.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	content: "";
@@ -73,21 +63,7 @@ header a.active {
 	width: 100%;
 	height: 100%;
 	z-index: -2;
-	opacity: 0.7;
-}
-*/
-
-#identification::after {
-	/*background-color: #001f3f;*/
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	/*opacity: 0.4;*/
+	opacity: 0.9;
 }
 
 #identification_info {
@@ -98,42 +74,19 @@ header a.active {
 	font-size: 30px;
 }
 
-#identification img {
-	position: relative;
-	bottom: 100px;
-	margin-left: 50px;
-}
-
-#identification img {
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	display: inline;
-}
-
-/*ABOUT ME*/
-#about_me {
-	font-size: 20px;
-	position: relative;
-	bottom: 120px;
-	width: 40%;
-	margin: auto;
-	background-color: black;
-	padding: 2.5em;
-	color: white;
-	border: 5px solid black;
-	border-radius: 10px;
-	opacity: .5;
-}
 
 /*PROFESSIONAL SECTION*/
 #professional {
-	padding-top: 40px;
-	width: 60%;
+	display: flex;
+	padding: 40px;
+	width: 75%;
 	margin: auto;
-	height: 900px;
+	/*height: 900px;*/
+	background-color: #984B43;
 	border: 1px solid gray;
 	border-radius: 15px;
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 
 #professional img {
@@ -141,7 +94,11 @@ header a.active {
 	width: 150px;
 }
 
+.flex1 {
+	flex: 1;
+}
 .skills-section {
+	flex: 2;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -151,19 +108,22 @@ header a.active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10px 40px;
+	/*padding: 10px 40px;*/
 }
 
 .skills * {
-	margin: 30px 0;
+	/*margin: 30px 0;*/
 }
 
 /*PORTFOLIO SECTION*/
 
 #portfolio_experience {
-	background-image: url("../images/mountain.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	padding: 40px;
+	border: 1px solid gray;
+	border-radius: 15px;
+	background-color: #233237;
+	width: 75%;
+	margin: auto;
 	color: #fff;
 }
 
