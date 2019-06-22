@@ -38,6 +38,13 @@ header a.active {
 	color: #fff;
 }
 
+#content {
+	background-image: url("../images/mountain.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 200px;
+}
+
 
 /*IDENTIFICATION SECTION*/
 
@@ -77,65 +84,101 @@ header a.active {
 
 /*PROFESSIONAL SECTION*/
 #professional {
-	display: flex;
-	padding: 40px;
-	width: 75%;
-	margin: auto;
-	/*height: 900px;*/
+	width: 70%;
 	background-color: #984B43;
+	margin: auto;
+	/*margin-top: 200px;*/
+	margin-bottom: 200px;
 	border: 1px solid gray;
 	border-radius: 15px;
-	margin-top: 90px;
-	margin-bottom: 90px;
+	padding: 40px;
+	/*height: 500px;*/
 }
 
-#professional img {
-	height: 150px;
-	width: 150px;
-}
-
-.flex1 {
-	flex: 1;
-}
-.skills-section {
-	flex: 2;
-	display: flex;
-	justify-content: center;
+#professional h1 {
 	text-align: center;
 }
 
-.skills {
+.professional-content {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/*padding: 10px 40px;*/
 }
 
-.skills * {
-	/*margin: 30px 0;*/
+.professional-content p {
+	width: 30%;
 }
+
+.professional-content ul {
+	flex: 2;
+}
+
+.skills-lists {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.python {
+	width: 70%;
+	background-color: #4CAF50;
+}
+
+.flask {
+	width: 35%;
+	background-color: #4CAF50;
+}
+
+.scrapy {
+	width: 55%;
+	background-color: #4CAF50;
+}
+
+.html {
+	width: 83%;
+	background-color: #4CAF50;
+}
+
+.css {
+	width: 74%;
+	background-color: #4CAF50;
+}
+
+.javascript {
+	width: 46%;
+	background-color: #4CAF50;
+}
+
+.skills{
+	text-align: right;
+	padding-right: 5px;
+}
+
+.container {
+	background-color: #ddd;
+	width: 80%;
+}
+
+.skills-lists span {
+	width: 10%;
+}
+
 
 /*PORTFOLIO SECTION*/
-
-#portfolio_experience {
-	padding: 40px;
+#portfolio {
+	background-color: #233237;
+	text-align: center;
+	width: 70%;
+	margin: auto;
 	border: 1px solid gray;
 	border-radius: 15px;
-	background-color: #233237;
-	width: 75%;
-	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	padding: 40px;
 	color: #fff;
-}
-
-#portfolio {
-	text-align: center;
-	padding: 100px 0;
 }
 
 .portfolio_images_div {
 	display: flex;
 	justify-content: center;
-	margin-top: 100px;
+	margin: 45px 0px;
 }
 
 .portfolio_images_div img {
@@ -143,11 +186,31 @@ header a.active {
 	width: 300px;
 }
 
+#portfolio p {
+	width: 70%;
+	margin: auto;
+}
+
+#portfolio a {
+	text-decoration: none;
+	color: #fff;
+}
+
 /*EXPERIENCE SECTION*/
 
-#experience{
-	padding-top: 100px;
-	padding-bottom: 450px;
+#experience {
+	background-color: #EAC67A;
+	width: 70%;
+	margin: auto;
+	border: 1px solid gray;
+	border-radius: 15px;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	padding: 40px;
+}
+
+#experience h1 {
+	text-align: center;
 }
 
 .exp_div {
@@ -180,7 +243,6 @@ header a.active {
 	padding: 100px;
 	color: #fff;
 	position: relative;
-	bottom: 200px;
 }
 
 .contact_content, .contactDiv {

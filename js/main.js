@@ -38,6 +38,7 @@ function fieldOnFocus() {
 
 
 var header = document.getElementById("header");
+var content = document.getElementById("content");
 var sticky = header.offsetTop;
 function myFunction() {
 	if (window.pageYOffset > sticky) {
@@ -46,10 +47,12 @@ function myFunction() {
 		header.classList.remove("sticky-header");
 	}
 
-	if (window.pageYOffset < 1590) {
+	if (window.pageYOffset <= 1590) {
 		header.style.backgroundColor = '#984B43';
-	} else {
+	} else if (window.pageYOffset > 1590 && window.pageYOffset < 2330) {
 		header.style.backgroundColor = '#233237';
+	} else {
+		header.style.backgroundColor = '#EAC67A';
 	}
 }
 
