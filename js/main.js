@@ -48,11 +48,11 @@ function myFunction() {
 	}
 
 	if (window.pageYOffset <= 1590) {
-		header.style.backgroundColor = '#984B43';
+		header.style.backgroundColor = '#001f3f';
 	} else if (window.pageYOffset > 1590 && window.pageYOffset < 2330) {
-		header.style.backgroundColor = '#233237';
+		header.style.backgroundColor = '#001f3f';
 	} else {
-		header.style.backgroundColor = '#EAC67A';
+		header.style.backgroundColor = '#001f3f';
 	}
 }
 

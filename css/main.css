@@ -6,7 +6,7 @@ body {
 	color: black;
 }
 
-
+/*"proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 /* HEADER */
 
 header {
@@ -38,27 +38,26 @@ header a.active {
 	color: #fff;
 }
 
-#content {
+
+/*#mainContent {
 	background-image: url("../images/mountain.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	padding-top: 200px;
 }
+*/
 
-
-/*IDENTIFICATION SECTION*/
-
-#identification {
-	text-align: center;
-	display: flex;
+/*FRONT PAGE SECTION*/
+#frontPage {
+	display: flex;	
 	justify-content: center;
 	align-items: center;
 	height: 950px;
-	color: black;
 	font-family: 'Oxygen Mono';
+
 }
 
-#identification::before {
+#frontPage::before {
 	background-image: url("../images/laptop2.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -73,48 +72,115 @@ header a.active {
 	opacity: 0.9;
 }
 
-#identification_info {
-	position: relative;
-	bottom: 100px;
-	text-align: justify;
-	margin-right: 100px;
+#frontPageContent {
 	font-size: 30px;
+}
+
+#frontPageContent h1 {
+	color: #984B43;
+	font-size: 80px;
+}
+
+/*ABOUT ME PAGE*/
+
+#aboutMePage {
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 200px;
 }
 
 
 /*PROFESSIONAL SECTION*/
-#professional {
-	width: 70%;
-	background-color: #984B43;
+#professionalPage {
+	/*background-color: #001f3f;*/
+	/*margin: auto;*/
+	/*margin-bottom: 200px;*/
+	/*border: 1px solid gray;*/
+	/*border-radius: 15px;*/
+	/*padding: 40px;*/
+	/*color: #fff;*/
+	box-sizing: border-box;
+	width: 80%;
 	margin: auto;
-	/*margin-top: 200px;*/
-	margin-bottom: 200px;
-	border: 1px solid gray;
-	border-radius: 15px;
-	padding: 40px;
-	/*height: 500px;*/
 }
 
-#professional h1 {
-	text-align: center;
+/*#professionalPage * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+*/
+.professional-fields {
+	/*display: inline-block;*/
+	/*width: 49.8%;*/
+	box-sizing: border-box;
+	width: 45%;
+	padding: 40px;
+	/*padding: 20px;*/
+}
+
+#professionalPage h1 {
+	font-size: 35px;
+	padding-bottom: 10px;
+	border-bottom: 5px solid;
+}
+
+.front-end, .data-engineer {
+	border-right: 2px solid;
+}
+
+.back-end, .skills-section {
+	border-left: 2px solid;
+}
+
+.front-end, .back-end {
+	border-bottom: 2px solid;
+}
+
+.data-engineer, .skills-section {
+	border-top: 2px solid;		
 }
 
 .professional-content {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .professional-content p {
-	width: 30%;
+	/*width: 30%;*/
+	/*margin-right: 40px;*/
 }
 
 .professional-content ul {
-	flex: 2;
+	/*flex: 2;*/
 }
 
-.skills-lists {
+/*.skills-lists {
 	display: flex;
 	margin-bottom: 30px;
+	font-size: 20px;
 }
+
+.skills-lists span {
+	width: 10%;
+	background-color: blue;
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.skills{
+	text-align: right;
+	padding-right: 5px;
+}
+
+.container {
+	background-color: #ddd;
+	width: 80%;
+}*/
 
 .python {
 	width: 70%;
@@ -122,7 +188,7 @@ header a.active {
 }
 
 .flask {
-	width: 35%;
+	width: 45%;
 	background-color: #4CAF50;
 }
 
@@ -146,24 +212,24 @@ header a.active {
 	background-color: #4CAF50;
 }
 
-.skills{
-	text-align: right;
-	padding-right: 5px;
+
+.view-page {
+	margin: 20px 0;
+	text-align: center;
 }
 
-.container {
-	background-color: #ddd;
-	width: 80%;
-}
-
-.skills-lists span {
-	width: 10%;
+.view-page a {
+	color: #000;
+	text-decoration: none;
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 8px;
 }
 
 
 /*PORTFOLIO SECTION*/
 #portfolio {
-	background-color: #233237;
+	background-color: #FC4A1A;
 	text-align: center;
 	width: 70%;
 	margin: auto;
@@ -199,7 +265,7 @@ header a.active {
 /*EXPERIENCE SECTION*/
 
 #experience {
-	background-color: #EAC67A;
+	background-color: #F7B733;
 	width: 70%;
 	margin: auto;
 	border: 1px solid gray;
