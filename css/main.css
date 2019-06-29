@@ -14,7 +14,8 @@ header {
 	justify-content: center;
 	align-items: center;
 	padding: 15px 0;
-	background-color: #984B43;  /*#233237  #EAC67A*/
+	background-color: #b3d9ff;  /*#233237  #EAC67A*/
+	z-index: 1;
 }
 
 .sticky-header {
@@ -38,14 +39,6 @@ header a.active {
 	color: #fff;
 }
 
-
-/*#mainContent {
-	background-image: url("../images/mountain.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	padding-top: 200px;
-}
-*/
 
 /*FRONT PAGE SECTION*/
 #frontPage {
@@ -86,39 +79,34 @@ header a.active {
 #aboutMePage {
 	width: 60%;
 	text-align: center;
-	margin: auto;
-	margin-top: 200px;
-	margin-bottom: 200px;
+	margin: 200px auto;
 }
 
 
 /*PROFESSIONAL SECTION*/
 #professionalPage {
-	/*background-color: #001f3f;*/
-	/*margin: auto;*/
-	/*margin-bottom: 200px;*/
-	/*border: 1px solid gray;*/
-	/*border-radius: 15px;*/
-	/*padding: 40px;*/
-	/*color: #fff;*/
+	background-color: #b3d9ff;
 	box-sizing: border-box;
-	width: 80%;
+	padding: 100px 0;
+}
+
+#professionalPage {
+	clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+}
+
+.professional-page-content {
+	width: 70%;
 	margin: auto;
 }
 
-/*#professionalPage * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+.professional-fields h3 {
+	font-family: 'Oxygen Mono';
 }
-*/
+
 .professional-fields {
-	/*display: inline-block;*/
-	/*width: 49.8%;*/
 	box-sizing: border-box;
 	width: 45%;
 	padding: 40px;
-	/*padding: 20px;*/
 }
 
 #professionalPage h1 {
@@ -149,27 +137,19 @@ header a.active {
 	justify-content: center;
 }
 
-.professional-content p {
-	/*width: 30%;*/
-	/*margin-right: 40px;*/
+.container {
+	background-color: #ddd;
+	width: 80%;
 }
 
-.professional-content ul {
-	/*flex: 2;*/
-}
-
-/*.skills-lists {
+.skills-lists {
 	display: flex;
-	margin-bottom: 30px;
-	font-size: 20px;
+	margin-bottom: 20px;
+	list-style-type: none;
 }
 
 .skills-lists span {
-	width: 10%;
-	background-color: blue;
-	border: 2px solid;
-	border-radius: 10px;
-	padding: 5px;
+	width: 16%;
 }
 
 .skills{
@@ -177,18 +157,13 @@ header a.active {
 	padding-right: 5px;
 }
 
-.container {
-	background-color: #ddd;
-	width: 80%;
-}*/
-
 .python {
 	width: 70%;
 	background-color: #4CAF50;
 }
 
 .flask {
-	width: 45%;
+	width: 58%;
 	background-color: #4CAF50;
 }
 
@@ -214,7 +189,7 @@ header a.active {
 
 
 .view-page {
-	margin: 20px 0;
+	margin-top: 40px;
 	text-align: center;
 }
 
@@ -229,7 +204,9 @@ header a.active {
 
 /*PORTFOLIO SECTION*/
 #portfolio {
-	background-color: #FC4A1A;
+	width: 70%;
+	margin: 200px auto;
+/*	background-color: #FC4A1A;
 	text-align: center;
 	width: 70%;
 	margin: auto;
@@ -238,23 +215,27 @@ header a.active {
 	margin-top: 200px;
 	margin-bottom: 200px;
 	padding: 40px;
-	color: #fff;
+	color: #fff;*/
+}
+
+#portfolio h1 {
+	font-size: 35px;
+	padding-bottom: 10px;
+	border-bottom: 5px solid;
 }
 
 .portfolio_images_div {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
 	margin: 45px 0px;
 }
 
 .portfolio_images_div img {
-	height: 300px;
-	width: 300px;
-}
-
-#portfolio p {
-	width: 70%;
-	margin: auto;
+	height: 400px;
+	width: 400px;
+	margin: 10px;
+	border-radius: 10px;
 }
 
 #portfolio a {
@@ -265,24 +246,34 @@ header a.active {
 /*EXPERIENCE SECTION*/
 
 #experience {
-	background-color: #F7B733;
-	width: 70%;
-	margin: auto;
-	border: 1px solid gray;
-	border-radius: 15px;
-	margin-top: 200px;
-	margin-bottom: 200px;
-	padding: 40px;
+	background-image: url('../images/mountain.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 100px 0;
+	/*opacity: 0.5;*/
 }
 
-#experience h1 {
-	text-align: center;
+.experience-content {
+	opacity: 1;
+	width: 70%;
+	margin: auto;
+}
+
+.experience-content h1 {
+	font-size: 35px;
+	padding-bottom: 10px;
+	border-bottom: 5px solid green;
 }
 
 .exp_div {
 	width: 50%;
 	display: inline-block;
 	position: relative;
+	padding-bottom: 20px;
+}
+
+.exp_div h3 {
+	font-family: 'Oxygen Mono';
 }
 
 .exp_right_side {
@@ -309,6 +300,7 @@ header a.active {
 	padding: 100px;
 	color: #fff;
 	position: relative;
+	margin-top: 200px;
 }
 
 .contact_content, .contactDiv {

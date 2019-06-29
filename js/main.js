@@ -46,14 +46,6 @@ function myFunction() {
 	} else {
 		header.classList.remove("sticky-header");
 	}
-
-	if (window.pageYOffset <= 1590) {
-		header.style.backgroundColor = '#001f3f';
-	} else if (window.pageYOffset > 1590 && window.pageYOffset < 2330) {
-		header.style.backgroundColor = '#001f3f';
-	} else {
-		header.style.backgroundColor = '#001f3f';
-	}
 }
 
 window.onscroll = function() {myFunction()};
